@@ -40,6 +40,10 @@ header {
   text-transform: uppercase;
 }
 
+.logo .thin {
+  font-weight: 400;
+}
+
 header nav a {
   color: black;
   text-decoration: none;
@@ -69,6 +73,7 @@ header nav a {
   font-family: "Poppins";
   font-size: 1.5rem;
   font-weight: 600;
+  line-height: 1.2;
   padding-bottom: 2.5rem;
 }
 
@@ -117,6 +122,10 @@ header nav a {
   margin: 1rem;
 }
 
+img.mobile {
+  display: none;
+}
+
 .article .text {
   width: 65%;
 }
@@ -133,7 +142,7 @@ header nav a {
 }
 
 .more {
-  color: skyblue;
+  color: dodgerblue;
   text-decoration: none;
 }
 
@@ -152,6 +161,7 @@ header nav a {
 .grid {
   padding: 2rem 4.5rem;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -213,4 +223,111 @@ footer {
   padding: 1rem 1.5rem 4.5rem 1.5rem;
 
   justify-content: space-between;
+}
+
+/*These are the media queries*/
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 470px) {
+  .logo span {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-content: center;
+    width: auto;
+    margin: 2rem 1rem;
+  }
+
+  .cta h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0 2rem 0;
+  }
+
+  .cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .information .main {
+    display: none;
+  }
+
+  .column {
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+  }
+
+  .article {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .article .text {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .article img {
+    display: none;
+  }
+
+  img.mobile {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .highlight {
+    background-color: white;
+  }
+
+  .grid {
+    padding: 1rem 1rem 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course {
+    width: 100%;
+    background-color: white;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .course .text {
+    width: 100%;
+    
+  }
+
+  .course img,
+  p {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+
+  }
+
+  .exhibit .column {
+    display: none;
+  }
 }
