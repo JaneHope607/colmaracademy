@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   width: 100%;
 }
@@ -20,15 +20,19 @@ html {
   margin: 2rem 1.5rem;
 }
 
+.main p {
+  line-height: 1.3;
+}
+
 .highlight {
-  background-color: silver;
+  background-color: #C5C1C0;
 }
 
 /*All the header stuff*/
 
 header {
   height: 4rem;
-  background-color: white;
+  background-color: #FFF;
   justify-content: space-between;
   padding: 1rem 1rem 1rem 1.5rem;
 }
@@ -45,9 +49,16 @@ header {
 }
 
 header nav a {
-  color: black;
+  color: #0A1612;
   text-decoration: none;
   padding: 0 0.5rem;
+}
+
+header nav a:last-child {
+  color: #FFF;
+  background-color: #F7CE3E;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
 }
 
 .mobile {
@@ -57,24 +68,23 @@ header nav a {
 /*This is the main banner*/
 
 .banner {
-  background-color: silver;
+  background-color: #1A2930;
 }
 
 .cta {
+  color: #FFF;
   flex-direction: column;
-  align-content: center;
   width: 40%;
+  font-family: "Poppins";
 }
 
 .cta h1 {
-  font-family: "Poppins";
   font-size: 2.5rem;
   font-weight: 700;
   padding: 1.5rem 1rem 1.5rem 0;
 }
 
 .cta h2 {
-  font-family: "Poppins";
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.2;
@@ -83,10 +93,11 @@ header nav a {
 }
 
 .button a {
+  font-size: 1rem;
   padding: 0.5rem 7.25rem;
-  border-radius: 5px;
-  background-color: gray;
-  color: white;
+  border-radius: 1.5rem;
+  background-color: #F7CE3E;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -106,6 +117,7 @@ header nav a {
   font-size: 2.5rem;
   font-weight: 700;
   padding: 2rem 0 1.5rem 0;
+  color: #1A2930;
 }
 
 .column {
@@ -146,7 +158,7 @@ img.mobile {
 }
 
 .more {
-  color: dodgerblue;
+  color: #4484CE;
   text-decoration: none;
 }
 
@@ -157,7 +169,7 @@ img.mobile {
 /*This is the Start Learning part*/
 
 .learning {
-  background-color: silver;
+  background-color: #F7CE3E;
   flex-direction: column;
   align-items: center;
 }
@@ -228,12 +240,16 @@ h2.title {
 /*This is the footer section*/
 
 footer {
+  color: #FFF;
+  background-color: #1A2930;
   border-top: 1px solid silver;
   padding: 1rem 1.5rem 4.5rem 1.5rem;
   justify-content: space-between;
 }
 
 footer nav a {
+  padding-left: 1rem;
+  color: #FFF;
   text-decoration: none;
 }
 
