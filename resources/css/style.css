@@ -109,17 +109,18 @@ header nav a:active {
 
 .button a {
   font-size: 1rem;
-  padding: 0.5rem 6.25rem;
+  padding: 0.5rem 6rem;
   border-radius: 1.5rem;
   color: #FFF;
   background-color: #F7CE3E;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .button a:hover {
   /*font-size: 1.3rem;*/
   font-weight: 700;
-  padding: 0.75rem 7.25rem;
+  padding: 0.75rem 7rem;
   color: #0A1612;
   background-color: #FFF;
 }
