@@ -21,7 +21,7 @@ html {
 }
 
 .main p {
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .highlight {
@@ -38,6 +38,7 @@ header {
 }
 
 .logo {
+  color: #1A2930;
   font-family: "Poppins";
   font-size: 1.25rem;
   font-weight: 700;
@@ -45,13 +46,16 @@ header {
 }
 
 .logo .thin {
+  color: #F7CE3E;
   font-weight: 400;
 }
 
 header nav a {
   color: #0A1612;
+  border-radius: 1.5rem;
   text-decoration: none;
   padding: 0 0.5rem;
+  transition: all 0.5s ease;
 }
 
 header nav a:last-child {
@@ -59,6 +63,17 @@ header nav a:last-child {
   background-color: #F7CE3E;
   border-radius: 1.5rem;
   padding: 0.5rem;
+}
+
+header nav a:hover {
+  color: #FFF;
+  background-color: #1A2930;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+
+header nav a:active {
+  background-color: #F7CE3E;
 }
 
 .mobile {
@@ -94,18 +109,26 @@ header nav a:last-child {
 
 .button a {
   font-size: 1rem;
-  padding: 0.5rem 7.25rem;
+  padding: 0.5rem 6.25rem;
   border-radius: 1.5rem;
-  background-color: #F7CE3E;
   color: #FFF;
+  background-color: #F7CE3E;
   text-decoration: none;
+}
+
+.button a:hover {
+  /*font-size: 1.3rem;*/
+  font-weight: 700;
+  padding: 0.75rem 7.25rem;
+  color: #0A1612;
+  background-color: #FFF;
 }
 
 /*This is the bit with the main article and the column*/
 
 .information {
   align-items: flex-start;
-  background-color: white;
+  background-color: #FFF;
 }
 
 .main img {
@@ -183,7 +206,8 @@ img.mobile {
 
 .course {
   width: 30.5%;
-  background-color: white;
+  color: #1A2930;
+  background-color: #FFF;
   margin: 1rem;
 }
 
@@ -213,7 +237,7 @@ img.mobile {
 /*This is the Thesis exhibit*/
 
 .thesis {
-  background-color: white;
+  background-color: #FFF;
   flex-direction: column;
   align-items: center;
 }
@@ -438,7 +462,7 @@ footer nav a {
   .course {
     height: 3.3rem;
     width: 100%;
-    background-color: white;
+    background-color: #FFF;
     margin: 0 0 0.5rem 0;
   }
 
@@ -475,6 +499,7 @@ footer nav a {
   }
 
   footer p {
+    font-size: 0.8rem;
     display: block;
   }
 
