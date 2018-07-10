@@ -15,6 +15,10 @@ html {
   align-items: center;
 }
 
+.center {
+  text-align: center;
+}
+
 .main {
   width: 60%;
   margin: 2rem 1.5rem;
@@ -70,10 +74,15 @@ header nav a:hover {
   background-color: #1A2930;
   border-radius: 1.5rem;
   padding: 0.5rem;
+  transition: all 0.5s ease;
 }
 
 header nav a:active {
   background-color: #F7CE3E;
+  transition-property: background;
+  transition-duration: 0s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
 }
 
 .mobile {
@@ -118,11 +127,16 @@ header nav a:active {
 }
 
 .button a:hover {
-  /*font-size: 1.3rem;*/
+  font-size: 1.3rem;
   font-weight: 700;
   padding: 0.75rem 7rem;
   color: #0A1612;
   background-color: #FFF;
+}
+
+.button a:active {
+  font-size: 1rem;
+  padding: 0.5rem 6rem;
 }
 
 /*This is the bit with the main article and the column*/
@@ -147,13 +161,16 @@ header nav a:active {
 .column {
   height: auto;
   width: 40%;
-  margin: 0 0;
+  margin: 0;
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 1rem;
 }
 
 .article {
+  width: 100%;
   height: auto;
+  transition: background 0.5s ease;
 }
 
 .article img {
@@ -168,6 +185,11 @@ img.mobile {
 
 .article .text {
   width: 65%;
+  padding-right: 1rem;
+}
+
+.article:hover {
+  background-color: #F7CE3E;
 }
 
 .text h3 {
@@ -193,9 +215,8 @@ img.mobile {
 /*This is the Start Learning part*/
 
 .learning {
-  background-color: #F7CE3E;
   flex-direction: column;
-  align-items: center;
+  background-color: #F7CE3E;
 }
 
 .grid {
@@ -210,6 +231,11 @@ img.mobile {
   color: #1A2930;
   background-color: #FFF;
   margin: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.course:hover {
+  width: 31%;
 }
 
 .course img {
@@ -239,8 +265,6 @@ img.mobile {
 
 .thesis {
   background-color: #FFF;
-  flex-direction: column;
-  align-items: center;
 }
 
 .exhibit {
@@ -249,7 +273,7 @@ img.mobile {
 
 .main video {
   width: 100%;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .thesis .title {
@@ -331,7 +355,6 @@ footer nav a {
 
   .button a {
     padding: 0.5rem 2rem;
-    border-radius: 5px;
   }
 
   .byline {
@@ -419,6 +442,19 @@ footer nav a {
     padding: 0 0 2rem 0;
   }
 
+  .button a:hover {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.75rem 3rem;
+    color: #0A1612;
+    background-color: #FFF;
+  }
+
+  .button a:active {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
   .information .main {
     display: none;
   }
@@ -432,6 +468,11 @@ footer nav a {
     flex-direction: column;
     height: auto;
     padding-bottom: 2rem;
+  }
+
+  .article:hover {
+    background-color: #FFF;
+    /*width: 100%;*/
   }
 
   .article .text {
@@ -465,6 +506,12 @@ footer nav a {
     width: 100%;
     background-color: #FFF;
     margin: 0 0 0.5rem 0;
+  }
+
+
+  .course:hover {
+    width: 100%;
+    height: 4rem;
   }
 
   .course .text {
