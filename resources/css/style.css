@@ -1,3 +1,5 @@
+/*Final version*/
+
 /*General stylings*/
 
 * {
@@ -171,7 +173,12 @@ header nav a:active {
 .article {
   width: 100%;
   height: auto;
-  transition: background 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article:hover {
+  background-color: #F7CE3E;
+  padding: 1rem 0 1rem 0;
 }
 
 .article img {
@@ -187,10 +194,6 @@ img.mobile {
 .article .text {
   width: 65%;
   padding-right: 1rem;
-}
-
-.article:hover {
-  background-color: #F7CE3E;
 }
 
 .text h3 {
@@ -491,7 +494,7 @@ footer nav a {
 
   .article:hover {
     background-color: #FFF;
-    /*width: 100%;*/
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   .article .text {
