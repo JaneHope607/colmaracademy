@@ -98,7 +98,7 @@ header nav a:active {
 .cta {
   color: #FFF;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 40%;
   font-family: "Poppins";
 }
@@ -119,7 +119,6 @@ header nav a:active {
 
 .button a {
   font-size: 1rem;
-  margin-left: 3rem;
   padding: 0.5rem 6rem;
   border-radius: 1.5rem;
   color: #FFF;
@@ -454,18 +453,12 @@ footer nav a {
   }
 
   .cta {
-    flex-direction: column;
-    align-items: center;
     width: auto;
     margin: 2rem 1rem;
   }
 
   .cta h1 {
     padding: 0 0 2rem 0;
-  }
-
-  .button a {
-    margin-left: 0;
   }
 
   .button a:hover {
